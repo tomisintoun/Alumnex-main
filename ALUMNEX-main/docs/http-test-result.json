@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "SSR login rendering",
+    "nonce CSP matches scripts",
+    "security headers",
+    "signup cookie attributes",
+    "session/private endpoint",
+    "admin denial",
+    "support form data persistence",
+    "cross-origin rejection",
+    "main route responses",
+    "POST logout/session revocation"
+  ],
+  "browserTested": false
+}

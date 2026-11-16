@@ -1,0 +1,25 @@
+# Upload the repository contents to a new, dedicated GitHub repository first.
+# This Blueprint provisions the app only. Supply a dedicated PostgreSQL database.
+services:
+  - type: web
+    name: alumnex-abuad
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run db:migrate && npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: SEED_DEMO
+        value: "false"
+      - key: DATABASE_URL
+        sync: false
+      - key: APP_ORIGIN
+        sync: false

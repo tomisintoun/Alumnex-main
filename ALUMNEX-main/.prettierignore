@@ -1,0 +1,7 @@
+node_modules
+.next
+.next-http
+.data
+package-lock.json
+public
+next-env.d.ts
