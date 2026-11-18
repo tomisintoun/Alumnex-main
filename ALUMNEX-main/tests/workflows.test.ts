@@ -82,7 +82,7 @@ async function resource(
   assert.equal(r.status, 201, await r.clone().text());
   return (await r.json()).item;
 }
-test("PowerBill security requirements and complete ALUMNEX workflows", async (t) => {
+test("ALUMNEX security requirements and complete workflows", async (t) => {
   const student = await signup("Student"),
     other = await signup("Other"),
     employer = await signup("Employer", "employer"),
