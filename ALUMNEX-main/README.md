@@ -46,7 +46,7 @@ Administrators verify student, alumni and employer accounts, approve public list
 - Live database-backed faculty, location, industry and mentorship summaries. These are descriptive summaries; no predictive or generative AI model is configured.
 - Support tickets and administrator responses, notifications, in-platform audience-targeted announcements and protected CSV export.
 
-## PowerBill requirements mapped to ALUMNEX
+## Course requirements mapped to ALUMNEX
 
 | Requirement                        | Implementation                                                                                                          |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ Administrators verify student, alumni and employer accounts, approve public list
 | Deployment                         | PostgreSQL configuration, environment example, Render Blueprint and GitHub Actions                                      |
 | Backups                            | `pg_dump` helper and recovery guidance in `docs/OPERATIONS.md`                                                          |
 
-Electricity-specific meter/tariff/bill workflows are replaced by alumni-platform workflows. VAT is not applied to donations.
+VAT is not applied to donations.
 
 ## Validate
 
@@ -96,6 +96,6 @@ The Blueprint does not provision a paid database, copy credentials between servi
 
 ## Important delivery limits
 
-This source is not a claim that every optional feature in the 93-section Figma brief is production-integrated. Google OAuth, voice/video calls, voice notes, image/document chat attachments, community reply threads, recurring billing, newsletter email campaigns, predictive AI and an external map provider are not implemented. They are not represented by fake success buttons. Scheduled mentorship sessions are calendar records; meeting infrastructure must be integrated separately.
+This source is not a claim that every optional feature in the original design brief is production-integrated. Google OAuth, voice/video calls, voice notes, image/document chat attachments, community reply threads, recurring billing, newsletter email campaigns, predictive AI and an external map provider are not implemented. They are not represented by fake success buttons. Scheduled mentorship sessions are calendar records; meeting infrastructure must be integrated separately.
 
-The generated Figma draft could not be retrieved again because its account tool quota was exhausted. This implementation follows the supplied written brief and the layouts authored in this conversation; pixel-level comparison with the entire Figma file was not possible. No live GitHub repository, production database, email service, payment account or Render service has been created by this package.
+The live deployment runs on Vercel with a PostgreSQL database on Supabase. Recovery email and Paystack giving are not configured on the live site.
