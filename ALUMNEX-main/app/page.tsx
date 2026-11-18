@@ -87,7 +87,7 @@ export default function Welcome() {
           </div>
           {[
             [0, "Mentorship", "top-left"],
-            [1, "Digital Health", "top-right"],
+            [1, "Careers", "top-right"],
             [2, "Opportunities", "bottom-left"],
             [3, "Your next chapter", "bottom-right"],
           ].map(([i, t, c]) => (
