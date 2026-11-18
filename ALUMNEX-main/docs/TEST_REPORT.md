@@ -28,7 +28,7 @@ TypeScript checking and the optimized Next.js production build passed. The Rende
 - No live Supabase/Neon database, Render deployment, email-provider credentials or Paystack credentials were connected for this app. Production TLS, migrations, backups, actual email delivery and real/test-provider payments need deployment validation.
 - PGlite validates PostgreSQL behavior, but does not test remote connection pooling, provider network rules or production throughput.
 - HTTP route/SSR checks do not execute a browser. Desktop/mobile screenshots, keyboard journeys, focus behavior and full browser hydration have not been validated in this environment.
-- The written design brief and authored layout guided the code. Figma’s tool quota prevented a fresh design-context read and complete visual comparison.
+- The written design brief guided the layouts. A pixel-level comparison with the Figma design was not carried out.
 
 ## Browser acceptance checklist
 
